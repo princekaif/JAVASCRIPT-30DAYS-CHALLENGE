@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <style>
+        .add{
+            background-color: black;
+            color: aliceblue;
+            height:20px;
+        }
+        .list{
+            background-color: black;
+            color: aliceblue;
+            height:150px;
+            padding: 100px;
+        }
+
+    </style>
+    <h1 id="remove">welcome</h1>
+    <ul id="list"class="list">
+        <li>list one</li>
+        <li>list two</li>
+    </ul>
+    <div class="first1" id="fdiv">
+        <p >jjj</p>
+    </div>
+    <div class="first" id="sdiv">
+        <p id="para">para2</p>
+        <img id="img"src="messi2.jpg" alt="">
+    </div>
+
+  <p id="text">click the button</p>
+  <button id="button">click me</button>
+  
+  <script type="module" src="day9.js">
+    document.getElementById("button").addEventListener("click",function(){
+    document.getElementById("text").textContent="text is sucessfully cahnged";
+});
+  </script>
+</body>
+</html>
