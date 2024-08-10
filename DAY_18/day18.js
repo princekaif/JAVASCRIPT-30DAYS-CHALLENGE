@@ -37,11 +37,28 @@ console.log(selectionSort([5, 2, 9, 1, 5, 6])); // [1, 2, 5, 5, 6, 9]
 
 // • Task 3: Implement the quicksort algorithm to sort an array of numbers in ascending order. Log the sorted array.
 
+
 // Activity 2: Searching Algorithms
 
 // • Task 4: Implement the linear search algorithm to find a target value in an array. Log the index of the target value.
 
 // • Task 5: Implement the binary search algorithm to find a target value in a sorted array. Log the index of the target value.
+function binarySearch(arr,start,end,target){
+    let start=0;
+    let end=arr.length;
+    let mid=start+(end-start)/2;
+    if(start>end) return ;
+    if(mid==target){
+        return mid;
+    }
+    if(mid>target){
+        binarySearch(arr,start,mid-1,target);
+    }
+    if(mid<target){
+        binary(arr,mid+1,end,target);
+    }
+}
+    
 
 // Activity 3: String Algorithms
 
