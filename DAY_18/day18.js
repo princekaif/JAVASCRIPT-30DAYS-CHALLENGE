@@ -46,19 +46,19 @@ console.log(selectionSort([5, 2, 9, 1, 5, 6])); // [1, 2, 5, 5, 6, 9]
 function binarySearch(arr,start,end,target){
     let start=0;
     let end=arr.length;
-    let mid=start+(end-start)/2;
+    let mid=Math.floor(start+(end-start)/2);
     if(start>end) return ;
-    if(mid==target){
+    if(arr[mid]==target){
         return mid;
     }
-    if(mid>target){
+    if(arr[mid]>target){
         binarySearch(arr,start,mid-1,target);
     }
-    if(mid<target){
+    if(arr[mid]<target){
         binary(arr,mid+1,end,target);
     }
 }
-    
+    console.log(binarySearch([5, 2, 9, 1, 5, 6]));
 
 // Activity 3: String Algorithms
 
